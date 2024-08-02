@@ -10,7 +10,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const res = await axios.post('bajajfinserv-production-0a52.up.railway.app/bfhl', parsedInput);
+      const res = await axios.post('https://bajajfinserv-production-0a52.up.railway.app/bfhl', parsedInput);
       setResponse(res.data);
     } catch (error) {
       console.error('Error:', error);
